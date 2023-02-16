@@ -1,7 +1,7 @@
 # FlashChat-iOS
 # My Testing Chat Application
 
-Flash Chat App for iOS is My Testing chat app. written in Swift using Firebase.
+Flash Chat App for iOS. This App is my testing chat app. written in Swift using Firebase.
 
 # Overview
 
