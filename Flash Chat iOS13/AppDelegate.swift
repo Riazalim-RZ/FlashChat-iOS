@@ -2,11 +2,13 @@
 //  AppDelegate.swift
 //  Flash Chat iOS13
 //
-//  Created by Angela Yu on 21/10/2019.
-//  Copyright © 2019 Angela Yu. All rights reserved.
+//  Created by Riaz Alim on 31/10/2022.
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,7 +16,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        FirebaseApp.configure()
+        let db = Firestore.firestore()
+        print(db)
+        
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.enableAutoToolbar = false
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+      
+//        IQKeyboardManager.shared.disabledDistanceHandlingClasses.append(ChatViewController.self)
+//        IQKeyboardManager.shared.disabledToolbarClasses.append(ChatViewController.self)
+        
         // Override point for customization after application launch.
+        Thread.sleep(forTimeInterval: 1.0)
+        print(#function)
+        
+        print("didFinishLounchingWithOption")
+        
         return true
     }
 
@@ -31,6 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+
 
 
 }
