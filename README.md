@@ -7,7 +7,20 @@ Flash Chat App for iOS is My Testing chat app. written in Swift using Firebase.
 
 Flash Chat App allows to send and receieve text messages instantly between two users. The project inteded to cover one of the most fundamental component of modern iOS Applications which is Table View.
 
-## Our Goal
+Tools used -
+Xcode,
+Swift,
+
+# Pods for Flash Chat iOS13
+
+ FirebaseAuth'
+ FirebaseFirestore'
+ IQKeyboardManagerSwift'
+
+
+
+# UI View
+
 
 <img width="567" alt="Screenshot 2023-02-16 at 2 37 23 PM" src="https://user-images.githubusercontent.com/62168289/219327047-b25d1759-c68c-4d8c-a638-aacd135181d4.png">
 
